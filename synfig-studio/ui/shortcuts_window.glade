@@ -87,6 +87,33 @@
             </child>
           </object>
         </child>
+        <child>
+          <object class="GtkShortcutsGroup">
+            <property name="visible">true</property>
+            <property name="title" translatable="yes" context="shortcuts window">Canvas Zoom</property>
+            <child>
+              <object class="GtkShortcutsShortcut">
+                <property name="visible">true</property>
+                <property name="title" translatable="yes" context="shortcuts window">Canvas-Zoom-In</property>
+                <property name="accelerator">&lt;Ctrl&gt;equal</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkShortcutsShortcut">
+                <property name="visible">true</property>
+                <property name="title" translatable="yes" context="shortcuts window">Canvas-Zoom-Out</property>
+                <property name="accelerator">&lt;Ctrl&gt;minus</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkShortcutsShortcut">
+                <property name="visible">true</property>
+                <property name="title" translatable="yes" context="shortcuts window">Canvas-Zoom-Fit</property>
+                <property name="accelerator">&lt;Ctrl&gt;0</property>
+              </object>
+            </child>			
+          </object>
+        </child>		
       </object>
     </child>
   </object>

@@ -1253,6 +1253,9 @@ DEFINE_ACTION("keyframe-properties", _("Properties"));
 "		<menuitem action='seek-next-second'/>"
 "		<menuitem action='seek-begin'/>"
 "		<menuitem action='seek-end'/>"
+"		<menuitem action='canvas-zoom-in'/>"
+"		<menuitem action='canvas-zoom-out'/>"
+"		<menuitem action='canvas-zoom-fit'/>"
 "	</menu>";
 
 	Glib::ustring ui_info =
@@ -1334,7 +1337,7 @@ DEFINE_ACTION("keyframe-properties", _("Properties"));
 	ACCEL("F12",									"<Actions>/canvasview/options"						);
 	ACCEL("<control>i",								"<Actions>/canvasview/import"						);
 	//ACCEL2(Gtk::AccelKey(GDK_KEY_Escape,static_cast<Gdk::ModifierType>(0), 		"<Actions>/canvasview/stop"						));
-//	ACCEL2(Gtk::AccelKey(GDK_KEY_Escape, Gdk::ModifierType(), 		"<Actions>/canvasview/stop"						));
+	//	ACCEL2(Gtk::AccelKey(GDK_KEY_Escape, Gdk::ModifierType(), 		"<Actions>/canvasview/stop"						));
 	ACCEL("<Control>g",								"<Actions>/canvasview/toggle-grid-show"					);
 	ACCEL("<Control>l",								"<Actions>/canvasview/toggle-grid-snap"					);
 	ACCEL("<Control>n",								"<Actions>/mainwindow/new"						);
@@ -1378,6 +1381,7 @@ DEFINE_ACTION("keyframe-properties", _("Properties"));
 	ACCEL2(Gtk::AccelKey(')',Gdk::MOD1_MASK|Gdk::CONTROL_MASK,			"<Actions>/action_group_layer_action_manager/amount-inc"		));
 	ACCEL("equal",									"<Actions>/canvasview/canvas-zoom-in"					);
 	ACCEL("minus",									"<Actions>/canvasview/canvas-zoom-out"					);
+	ACCEL("0",                       "<Actions>/canvasview/canvas-zoom-fit");
 	ACCEL2(Gtk::AccelKey('+',Gdk::CONTROL_MASK,					"<Actions>/canvasview/time-zoom-in"					));
 	ACCEL2(Gtk::AccelKey('_',Gdk::CONTROL_MASK,					"<Actions>/canvasview/time-zoom-out"					));
 	ACCEL("bracketleft",             "<Actions>/canvasview/jump-prev-keyframe");
@@ -1389,7 +1393,9 @@ DEFINE_ACTION("keyframe-properties", _("Properties"));
 	ACCEL("<Control><Shift>less",    "<Actions>/canvasview/seek-begin");
 	ACCEL("<Control><Shift>greater", "<Actions>/canvasview/seek-end");
 	ACCEL("<Mod1>o",                 "<Actions>/canvasview/toggle-onion-skin");
-	ACCEL("0",                       "<Actions>/canvasview/canvas-zoom-fit");
+	ACCEL("<Control>equal",									"<Actions>/canvasview/canvas-zoom-in"					);
+	ACCEL("<Control>minus",									"<Actions>/canvasview/canvas-zoom-out"					);	
+	ACCEL("<Control>0",                       "<Actions>/canvasview/canvas-zoom-fit");
 	ACCEL("space",                   "<Actions>/canvasview/play");
 	ACCEL("space",                   "<Actions>/canvasview/pause");
 
