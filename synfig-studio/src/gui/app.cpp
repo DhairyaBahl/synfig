@@ -1253,9 +1253,13 @@ DEFINE_ACTION("keyframe-properties", _("Properties"));
 "		<menuitem action='seek-next-second'/>"
 "		<menuitem action='seek-begin'/>"
 "		<menuitem action='seek-end'/>"
-"		<menuitem action='canvas-zoom-in'/>"
-"		<menuitem action='canvas-zoom-out'/>"
-"		<menuitem action='canvas-zoom-fit'/>"
+"	</menu>";
+
+	hidden_ui_info_menu +=
+"	<menu action='menu-view'>"
+"		<menuitem action='canvas-zoom-in-2'/>"
+"		<menuitem action='canvas-zoom-out-2'/>"
+"		<menuitem action='canvas-zoom-fit-2'/>"
 "	</menu>";
 
 	Glib::ustring ui_info =
@@ -1393,9 +1397,9 @@ DEFINE_ACTION("keyframe-properties", _("Properties"));
 	ACCEL("<Control><Shift>less",    "<Actions>/canvasview/seek-begin");
 	ACCEL("<Control><Shift>greater", "<Actions>/canvasview/seek-end");
 	ACCEL("<Mod1>o",                 "<Actions>/canvasview/toggle-onion-skin");
-	ACCEL("<Control>equal",									"<Actions>/canvasview/canvas-zoom-in"					);
-	ACCEL("<Control>minus",									"<Actions>/canvasview/canvas-zoom-out"					);	
-	ACCEL("<Control>0",                       "<Actions>/canvasview/canvas-zoom-fit");
+	ACCEL("<Control>equal",									"<Actions>/canvasview/canvas-zoom-in-2"					);
+	ACCEL("<Control>minus",									"<Actions>/canvasview/canvas-zoom-out-2"					);	
+	ACCEL("<Control>0",                       "<Actions>/canvasview/canvas-zoom-fit-2");
 	ACCEL("space",                   "<Actions>/canvasview/play");
 	ACCEL("space",                   "<Actions>/canvasview/pause");
 
