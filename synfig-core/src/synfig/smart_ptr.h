@@ -30,6 +30,7 @@
 
 #include <cassert>
 #include "_ref_count.h"
+#include <cstddef>
 
 /* === M A C R O S ========================================================= */
 
