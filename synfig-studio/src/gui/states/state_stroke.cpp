@@ -64,9 +64,9 @@ class studio::StateStroke_Context : public sigc::trackable
 
 	Duckmatic::Push duckmatic_push;
 
-	etl::smart_ptr<std::list<synfig::Point> > stroke_data;
+	synfig::smart_ptr<std::list<synfig::Point> > stroke_data;
 
-	etl::smart_ptr<std::list<synfig::Real> > width_data;
+	synfig::smart_ptr<std::list<synfig::Real> > width_data;
 
 	Gdk::ModifierType modifier;
 

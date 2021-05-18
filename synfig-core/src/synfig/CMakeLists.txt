@@ -146,7 +146,19 @@ target_link_libraries(synfig
 
 ## Install headers
 ## TODO: find a better way to do that, maybe?
-file(GLOB SYNFIG_HEADERS "${CMAKE_CURRENT_LIST_DIR}/*.h")
+
+configure_file(
+    etl_profile.h.cmake.in
+    ${PROJECT_BINARY_DIR}/ETL/etl_profile.h
+)
+
+file(GLOB SYNFIG_HEADERS 
+        "${CMAKE_CURRENT_LIST_DIR}/*.h"
+        "${CMAKE_CURRENT_LIST_DIR}/smart_ptr"
+        
+    #auto generated
+        "${PROJECT_BINARY_DIR}/ETL/etl_profile.h"
+    )
 
 install(
     FILES ${SYNFIG_HEADERS}
