@@ -64,9 +64,9 @@ class studio::StateStroke_Context : public sigc::trackable
 
 	Duckmatic::Push duckmatic_push;
 
-	synfig::smart_ptr<std::list<synfig::Point> > stroke_data;
+	etl::smart_ptr<std::list<synfig::Point> > stroke_data;
 
-	synfig::smart_ptr<std::list<synfig::Real> > width_data;
+	etl::smart_ptr<std::list<synfig::Real> > width_data;
 
 	Gdk::ModifierType modifier;
 
@@ -87,7 +87,7 @@ public:
 
 	const etl::handle<CanvasView>& get_canvas_view()const{return canvas_view_;}
 	etl::handle<synfigapp::CanvasInterface> get_canvas_interface()const{return canvas_view_->canvas_interface();}
-	synfig::Canvas::Handle get_canvas()const{return canvas_view_->get_canvas();}
+	etl::Canvas::Handle get_canvas()const{return canvas_view_->get_canvas();}
 	WorkArea * get_work_area()const{return canvas_view_->get_work_area();}
 
 };	// END of class StateStroke_Context

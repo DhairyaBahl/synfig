@@ -54,12 +54,12 @@ extern StateStroke state_stroke;
 
 struct EventStroke : public Smach::event
 {
-	synfig::smart_ptr<std::list<synfig::Point> > stroke_data;
-	synfig::smart_ptr<std::list<synfig::Real> > width_data;
+	etl::smart_ptr<std::list<synfig::Point> > stroke_data;
+	etl::smart_ptr<std::list<synfig::Real> > width_data;
 	Gdk::ModifierType modifier;
 
-	EventStroke(synfig::smart_ptr<std::list<synfig::Point> > stroke_data,
-			synfig::smart_ptr<std::list<synfig::Real> > width_data,
+	EventStroke(etl::smart_ptr<std::list<synfig::Point> > stroke_data,
+			etl::smart_ptr<std::list<synfig::Real> > width_data,
 			Gdk::ModifierType modifier=Gdk::ModifierType(0)
 	):
 		Smach::event(EVENT_WORKAREA_STROKE),
