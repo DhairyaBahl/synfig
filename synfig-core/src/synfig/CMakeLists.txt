@@ -152,7 +152,7 @@ configure_file(
     ${PROJECT_BINARY_DIR}/ETL/etl_profile.h
 )
 
-file(GLOB SYNFIG_HEADERS 
+set(GLOB SYNFIG_HEADERS 
         "${CMAKE_CURRENT_LIST_DIR}/*.h"
         "${CMAKE_CURRENT_LIST_DIR}/smart_ptr"
         
