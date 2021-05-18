@@ -27,7 +27,7 @@
 
 /* === H E A D E R S ======================================================= */
 
-#include "ETL/etl_config.h"
+#include "etl_config.h"
 
 #include "_smart_ptr.h"
 
