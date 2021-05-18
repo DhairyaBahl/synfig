@@ -30,7 +30,7 @@
 #endif
 
 #include <synfig/debug/debugsurface.h>
-
+#include "rect.h"
 #include "resample.h"
 #include "../../primitive/transformationaffine.h"
 
