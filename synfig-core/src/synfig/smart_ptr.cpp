@@ -31,6 +31,7 @@
 #endif
 
 # include "smart_ptr.h"
+# include "ETL/etl_config.h"
 
 #endif
 

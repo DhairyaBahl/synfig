@@ -41,6 +41,7 @@ PUBLIC
 
 target_sources(synfig
     PRIVATE
+        "${CMAKE_CURRENT_LIST_DIR}/smart_ptr.cpp"
         "${CMAKE_CURRENT_LIST_DIR}/activepoint.cpp"
         "${CMAKE_CURRENT_LIST_DIR}/bone.cpp"
         "${CMAKE_CURRENT_LIST_DIR}/blur.cpp"
