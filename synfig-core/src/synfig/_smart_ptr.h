@@ -24,13 +24,13 @@
 
 /* === S T A R T =========================================================== */
 
-#ifndef __ETL__SMART_PTR_H
-#define __ETL__SMART_PTR_H
+#ifndef __SYNFIG__SMART_PTR_H
+#define __SYNFIG__SMART_PTR_H
 
 /* === H E A D E R S ======================================================= */
 
 #include <cassert>
-#include "_ref_count.h"
+#include "ETL/_ref_count.h"
 
 /* === M A C R O S ========================================================= */
 
@@ -38,7 +38,7 @@
 
 /* === C L A S S E S & S T R U C T S ======================================= */
 
-namespace etl {
+namespace synfig {
 
 template <class T>
 struct generic_deleter
@@ -53,7 +53,7 @@ struct array_deleter
 };
 
 // ========================================================================
-/*!	\class	smart_ptr	_smart_ptr.h	ETL/smart_ptr
+/*!	\class	smart_ptr	_smart_ptr.h	SYNFIG/smart_ptr
 **	\brief	Object Smart Pointer
 **	\writeme
 */
