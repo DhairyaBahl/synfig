@@ -27,7 +27,7 @@
 
 /* === H E A D E R S ======================================================= */
 
-#include <ETL/smart_ptr.h>
+#include <ETL/_smart_ptr.h>
 #include <gui/canvasview.h>
 #include <gui/smach.h>
 #include <list>
