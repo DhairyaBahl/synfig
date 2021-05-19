@@ -29,7 +29,7 @@
 /* === H E A D E R S ======================================================= */
 
 #include <cassert>
-#include "_ref_count.h"
+#include "ref_count.h"
 #include <cstddef>
 
 /* === M A C R O S ========================================================= */

@@ -41,7 +41,6 @@ PUBLIC
 
 target_sources(synfig
     PRIVATE
-        "${CMAKE_CURRENT_LIST_DIR}/smart_ptr.cpp"
         "${CMAKE_CURRENT_LIST_DIR}/activepoint.cpp"
         "${CMAKE_CURRENT_LIST_DIR}/bone.cpp"
         "${CMAKE_CURRENT_LIST_DIR}/blur.cpp"
@@ -66,6 +65,7 @@ target_sources(synfig
         "${CMAKE_CURRENT_LIST_DIR}/renddesc.cpp"
         "${CMAKE_CURRENT_LIST_DIR}/render.cpp"
         "${CMAKE_CURRENT_LIST_DIR}/savecanvas.cpp"
+        "${CMAKE_CURRENT_LIST_DIR}/smart_ptr.cpp"
         "${CMAKE_CURRENT_LIST_DIR}/string_helper.cpp"
         "${CMAKE_CURRENT_LIST_DIR}/surface.cpp"
         "${CMAKE_CURRENT_LIST_DIR}/target.cpp"
