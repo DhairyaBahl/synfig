@@ -32,9 +32,9 @@
 
 #include <stdexcept>
 
-#include <ETL/boxblur>
 #include <ETL/gaussian>
 
+#include "boxblur.h"
 #include "blur.h"
 
 #include "general.h"
